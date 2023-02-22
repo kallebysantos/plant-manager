@@ -1,0 +1,35 @@
+{
+    "env": {
+    },
+    "extends": [
+        "@react-native-community"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "prettier/prettier": "off"
+    }
+}
+
+/* module.exports = {
+  root: true,
+  extends: '@react-native-community',
+  rules: {
+    // ...
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'react/jsx-closing-bracket-location': [
+      'error', 0
+    ],
+  },
+};
+ */
