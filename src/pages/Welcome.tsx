@@ -12,7 +12,7 @@ export function Welcome() {
 
   return (
     <SafeAreaView className="p-12 flex-1 items-center justify-around">
-      <Text className="text-3xl text-center font-heading text-gray-500">
+      <Text className="text-3xl text-center font-heading text-gray-500 dark:text-white">
         Gerencie {'\n'}
         suas plantas {'\n'}
         de forma fácil
@@ -20,7 +20,7 @@ export function Welcome() {
 
       <Image source={wateringImg} className="w-full" resizeMode="contain" />
 
-      <Text className="text-lg text-center font-body text-gray-500">
+      <Text className="text-lg text-center font-body text-gray-500 dark:text-white">
         Não esqueça mais de regar suas plantas. Nós cuidamos de lembrar você
         sempre que precisar.
       </Text>
@@ -28,7 +28,8 @@ export function Welcome() {
       <TouchableOpacity
         className="w-14 h-14 mb-2 bg-green-500 rounded-2xl items-center justify-center"
         activeOpacity={0.7}
-        onPress={() => navigator.navigate('UserIdentification')}>
+        onPress={() => navigator.navigate('UserIdentification')}
+      >
         <Feather name="chevron-right" size={32} color={colors.white} />
       </TouchableOpacity>
     </SafeAreaView>
