@@ -1,44 +1,69 @@
-import React from 'react';
+// import {useNavigation} from '@react-navigation/native';
+import React, {useState} from 'react';
 import {
   Keyboard,
   KeyboardAvoidingView,
   Platform,
   SafeAreaView,
   Text,
+  TextInput,
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
+
 import {Button} from '../components/Button';
 
 export function UserIdentification() {
+  const [isInvalid, setIsInvalid] = useState(false);
+  const [username, setUsername] = useState<string>();
+
+  // const navigator = useNavigation();
+
+  function handleChangeText(value: string) {
+    setIsInvalid(!value);
+    setUsername(value);
+  }
+
+  function handleSubmit() {
+    if (!username) {
+      setIsInvalid(true);
+      return;
+    }
+
+    // navigator.navigate('Confirmation');
+  }
+
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView className="flex-1">
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        className="flex-1"
+      >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-          <View>
-            <Text>{true ? '😆' : '😃'}</Text>
-            <Text>
+          <View className="w-full px-14 flex-1 items-center justify-center">
+            <Text className="text-4xl text-center text-black">
+              {username ? '😆' : '😃'}
+            </Text>
+
+            <Text className="mt-5 text-2xl text-center font-heading text-gray-500 dark:text-white">
               Como podemos {'\n'}
               chamar você?
             </Text>
 
-            {/* <TextInput
-              style={[
-                styles.input,
-                isInvalid
-                  ? styles.inputInvalid
-                  : (isFocused || isFilled) && styles.inputFocused,
-                ,
-              ]}
+            <TextInput
               placeholder="Digite um nome"
-              onBlur={() => setIsFocused(false)}
-              onFocus={() => setIsFocused(true)}
               onChangeText={handleChangeText}
-            /> */}
+              className={`w-full p-2 my-12 text-lg text-center text-gray-500 dark:text-white border-b border-gray-300 focus:border-green-500 
+              ${isInvalid && 'border-red-500'}
+              ${username && 'border-green-500'}`}
+            />
 
-            <View>
-              <Button title="Confirmar" />
+            <View className="w-full px-4">
+              <Button
+                className="w-full"
+                title="Confirmar"
+                onPress={handleSubmit}
+              />
             </View>
           </View>
         </TouchableWithoutFeedback>
@@ -46,52 +71,3 @@ export function UserIdentification() {
     </SafeAreaView>
   );
 }
-/*
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-  formContainer: {
-    width: '100%',
-    paddingHorizontal: 54,
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    marginTop: 20,
-    fontSize: 24,
-    lineHeight: 32,
-    textAlign: 'center',
-    color: colors.heading,
-    fontFamily: fonts.heading,
-  },
-  emoji: {
-    fontSize: 44,
-  },
-  input: {
-    width: '100%',
-    padding: 10,
-    marginTop: 50,
-    fontSize: 18,
-    textAlign: 'center',
-    color: colors.heading,
-    borderBottomWidth: 1,
-    borderColor: colors.gray,
-  },
-  inputFocused: {
-    borderColor: colors.green,
-  },
-  inputInvalid: {
-    borderColor: colors.red,
-  },
-  buttonWrapper: {
-    width: '100%',
-    paddingHorizontal: 20,
-    marginTop: 40,
-  },
-});
- */
