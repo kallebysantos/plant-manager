@@ -1,20 +1,19 @@
 import React from 'react';
+import {useColorScheme} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import colors from 'tailwindcss/colors';
 
 import {Welcome} from '../pages/Welcome';
 import {UserIdentification} from '../pages/UserIdentification';
-import {useColorScheme} from 'react-native';
 import {Confirmation} from '../pages/Confirmation';
-
-/*import {PlantSelect} from '../pages/PlantSelect'; */
+import {PlantSelector} from '../pages/PlantSelector';
 
 export type StackRoutesList = {
   Welcome: undefined;
   UserIdentification: undefined;
   Confirmation: undefined;
-  PlantSelect: undefined;
+  PlantSelector: undefined;
 };
 
 const stackRoutes = createNativeStackNavigator<StackRoutesList>();
@@ -42,7 +41,7 @@ export function StackRoutes() {
 
       <stackRoutes.Screen name="Confirmation" component={Confirmation} />
 
-      {/* <stackRoutes.Screen name="PlantSelect" component={PlantSelect} /> */}
+      <stackRoutes.Screen name="PlantSelector" component={PlantSelector} />
     </stackRoutes.Navigator>
   );
 }

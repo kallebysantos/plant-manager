@@ -1,9 +1,12 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Text} from 'react-native';
 
 import {Button} from '../components/Button';
 
 export function Confirmation() {
+  const navigator = useNavigation();
+
   return (
     <View className="flex-1 px-10 items-center justify-center">
       <Text className="mb-10 text-[75px] text-black">😊</Text>
@@ -17,7 +20,11 @@ export function Confirmation() {
       </Text>
 
       <View className="w-full my-10 px-4">
-        <Button className="w-full" title="Começar" />
+        <Button
+          className="w-full"
+          title="Começar"
+          onPress={() => navigator.navigate('PlantSelector')}
+        />
       </View>
     </View>
   );
