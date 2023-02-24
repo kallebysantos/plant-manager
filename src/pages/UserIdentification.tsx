@@ -1,4 +1,4 @@
-// import {useNavigation} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
   Keyboard,
@@ -17,7 +17,7 @@ export function UserIdentification() {
   const [isInvalid, setIsInvalid] = useState(false);
   const [username, setUsername] = useState<string>();
 
-  // const navigator = useNavigation();
+  const navigator = useNavigation();
 
   function handleChangeText(value: string) {
     setIsInvalid(!value);
@@ -30,7 +30,7 @@ export function UserIdentification() {
       return;
     }
 
-    // navigator.navigate('Confirmation');
+    navigator.navigate('Confirmation');
   }
 
   return (
