@@ -94,9 +94,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.mynativeapp"
+    namespace "com.kallebysantos.plantmanager"
     defaultConfig {
-        applicationId "com.mynativeapp"
+        applicationId "com.kallebysantos.plantmanager"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

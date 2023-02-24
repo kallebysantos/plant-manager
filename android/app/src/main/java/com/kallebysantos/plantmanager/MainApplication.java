@@ -1,4 +1,4 @@
-package com.mynativeapp;
+package com.kallebysantos.plantmanager;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
