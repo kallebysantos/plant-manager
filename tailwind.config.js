@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./App.tsx', './src/**/*.tsx'],
@@ -11,17 +14,23 @@ module.exports = {
         red: {
           500: '#E83F5B',
         },
+        gray: {
+          600: '#52665A',
+        },
         green: {
           100: '#DAF2E4',
           500: '#32B768',
           700: '#2B7A4B',
         },
       },
+      textColor: {
+        emoji: colors.black,
+      },
       fontFamily: {
-        heading: ['Jost-SemiBold'],
-        body: ['Jost-Regular'],
+        sans: ['Jost', ...defaultTheme.fontFamily.sans],
       },
     },
+    fontFamily: ['Jost', 'sans-serif'],
   },
   plugins: [],
 };

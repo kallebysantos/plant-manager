@@ -12,7 +12,7 @@ export function Welcome() {
 
   return (
     <SafeAreaView className="p-12 flex-1 items-center justify-around">
-      <Text className="text-3xl text-center font-heading text-gray-500 dark:text-white">
+      <Text className="text-3xl font-semibold text-gray-600 dark:text-white  text-center">
         Gerencie {'\n'}
         suas plantas {'\n'}
         de forma fácil
@@ -20,7 +20,7 @@ export function Welcome() {
 
       <Image source={wateringImg} className="w-full" resizeMode="contain" />
 
-      <Text className="text-lg text-center font-body text-gray-500 dark:text-white">
+      <Text className="text-lg text-center text-gray-600 dark:text-white">
         Não esqueça mais de regar suas plantas. Nós cuidamos de lembrar você
         sempre que precisar.
       </Text>

@@ -8,18 +8,18 @@ export function Confirmation() {
   const navigator = useNavigation();
 
   return (
-    <View className="flex-1 px-10 items-center justify-center">
-      <Text className="mb-10 text-[75px] text-black">😊</Text>
-      <Text className="my-4 text-2xl font-heading text-gray-500 dark:text-white">
+    <View className="flex-1 px-8 items-center justify-center">
+      <Text className="mb-10 text-[75px] text-emoji">😊</Text>
+      <Text className="my-4 text-2xl font-semibold text-gray-600 dark:text-white">
         Prontinho
       </Text>
 
-      <Text className="text-lg font-body text-gray-500 dark:text-white text-center">
+      <Text className="text-lg text-center text-gray-600 dark:text-white">
         Agora vamos começar a cuidar das suas{'\n'}
         plantinhas com muito cuidado.
       </Text>
 
-      <View className="w-full my-10 px-4">
+      <View className="w-full my-10 px-10">
         <Button
           className="w-full"
           title="Começar"

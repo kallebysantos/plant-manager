@@ -53,8 +53,8 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Jost-Regular.ttf</string>
-		<string>Jost-SemiBold.ttf</string>
+		<string>Jost-Italic.ttf</string>
+		<string>Jost.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -14,8 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-PlantManager-PlantManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PlantManager-PlantManagerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		6F4929818B744563B98630A3 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A8EE8616425AA67CDF75 /* Jost-Regular.ttf */; };
-		90EC9925DC434C44BA128EFF /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0748D6D66CC340789120354C /* Jost-SemiBold.ttf */; };
+		CC32E43F7A224FEF9118C166 /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DB037E3CD2148FEBC65B1CD /* Jost-Italic.ttf */; };
+		4A4362898E8E42D6B13C593E /* Jost.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8AF4EDDC08A4ECBAA9AB09E /* Jost.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "PlantManager/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-PlantManager-PlantManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantManager-PlantManagerTests.release.xcconfig"; path = "Target Support Files/Pods-PlantManager-PlantManagerTests/Pods-PlantManager-PlantManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BBC7A8EE8616425AA67CDF75 /* Jost-Regular.ttf */ = {isa = PBXFileReference; name = "Jost-Regular.ttf"; path = "../assets/fonts/Jost-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0748D6D66CC340789120354C /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; name = "Jost-SemiBold.ttf"; path = "../assets/fonts/Jost-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5DB037E3CD2148FEBC65B1CD /* Jost-Italic.ttf */ = {isa = PBXFileReference; name = "Jost-Italic.ttf"; path = "../assets/fonts/Jost-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A8AF4EDDC08A4ECBAA9AB09E /* Jost.ttf */ = {isa = PBXFileReference; name = "Jost.ttf"; path = "../assets/fonts/Jost.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 		EC6A865EF106465198A3DB40 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				BBC7A8EE8616425AA67CDF75 /* Jost-Regular.ttf */,
-				0748D6D66CC340789120354C /* Jost-SemiBold.ttf */,
+				5DB037E3CD2148FEBC65B1CD /* Jost-Italic.ttf */,
+				A8AF4EDDC08A4ECBAA9AB09E /* Jost.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				6F4929818B744563B98630A3 /* Jost-Regular.ttf in Resources */,
-				90EC9925DC434C44BA128EFF /* Jost-SemiBold.ttf in Resources */,
+				CC32E43F7A224FEF9118C166 /* Jost-Italic.ttf in Resources */,
+				4A4362898E8E42D6B13C593E /* Jost.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "PlantManager/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "PlantManager";
+				INFOPLIST_KEY_CFBundleDisplayName = "PlantManager";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,7 +532,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = "PlantManager/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "PlantManager";
+				INFOPLIST_KEY_CFBundleDisplayName = "PlantManager";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
