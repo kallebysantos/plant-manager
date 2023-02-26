@@ -8,20 +8,21 @@ export function Confirmation() {
   const navigator = useNavigation();
 
   return (
-    <View className="flex-1 px-8 items-center justify-center">
-      <Text className="mb-10 text-[75px] text-emoji">😊</Text>
-      <Text className="my-4 text-2xl font-semibold text-gray-600 dark:text-white">
-        Prontinho
-      </Text>
+    <View className="flex-1 items-center justify-center space-y-10 px-4">
+      <Text className="text-[75px] text-emoji">😊</Text>
 
-      <Text className="text-lg text-center text-gray-600 dark:text-white">
-        Agora vamos começar a cuidar das suas{'\n'}
-        plantinhas com muito cuidado.
-      </Text>
+      <View className="space-y-4">
+        <Text className="text-center text-2xl font-semibold text-gray-600 dark:text-white">
+          Prontinho
+        </Text>
 
-      <View className="w-full my-10 px-10">
+        <Text className="text-center text-lg text-gray-600 dark:text-white">
+          Agora vamos começar a cuidar das suas plantinhas com muito cuidado.
+        </Text>
+      </View>
+
+      <View className="w-3/4 px-4">
         <Button
-          className="w-full"
           title="Começar"
           onPress={() => navigator.navigate('PlantSelector')}
         />

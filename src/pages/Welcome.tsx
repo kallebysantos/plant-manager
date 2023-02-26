@@ -11,8 +11,8 @@ export function Welcome() {
   const navigator = useNavigation();
 
   return (
-    <SafeAreaView className="p-12 flex-1 items-center justify-around">
-      <Text className="text-3xl font-semibold text-gray-600 dark:text-white  text-center">
+    <SafeAreaView className="flex-1 items-center justify-around space-y-12 p-4 py-10">
+      <Text className="text-center text-3xl font-bold text-gray-600  dark:text-white">
         Gerencie {'\n'}
         suas plantas {'\n'}
         de forma fácil
@@ -20,13 +20,13 @@ export function Welcome() {
 
       <Image source={wateringImg} className="w-full" resizeMode="contain" />
 
-      <Text className="text-lg text-center text-gray-600 dark:text-white">
+      <Text className="text-center text-lg text-gray-600 dark:text-white">
         Não esqueça mais de regar suas plantas. Nós cuidamos de lembrar você
         sempre que precisar.
       </Text>
 
       <TouchableOpacity
-        className="w-14 h-14 mb-2 bg-green-500 rounded-2xl items-center justify-center"
+        className="h-14 w-14 items-center justify-center rounded-2xl bg-green-500"
         activeOpacity={0.7}
         onPress={() => navigator.navigate('UserIdentification')}
       >

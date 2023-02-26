@@ -40,30 +40,28 @@ export function UserIdentification() {
         className="flex-1"
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-          <View className="w-full px-14 flex-1 items-center justify-center">
-            <Text className="text-4xl text-center text-emoji">
-              {username ? '😆' : '😃'}
-            </Text>
+          <View className="w-full flex-1 items-center justify-center space-y-10 px-4">
+            <View className="space-y-6">
+              <Text className="text-center text-4xl text-emoji">
+                {username ? '😆' : '😃'}
+              </Text>
 
-            <Text className="mt-5 text-2xl font-semibold text-center text-gray-600 dark:text-white">
-              Como podemos {'\n'}
-              chamar você?
-            </Text>
+              <Text className="text-center text-2xl font-semibold text-gray-600 dark:text-white">
+                Como podemos {'\n'}
+                chamar você?
+              </Text>
+            </View>
 
             <TextInput
               placeholder="Digite um nome"
               onChangeText={handleChangeText}
-              className={`w-full p-2 my-12 text-lg text-center border-b text-gray-600 dark:text-white border-gray-300 focus:border-green-500 
+              className={`w-4/5 border-b border-gray-300 p-3 text-center text-lg text-gray-600 focus:border-green-500 dark:text-white 
               ${isInvalid && 'border-red-500'}
               ${username && 'border-green-500'}`}
             />
 
-            <View className="w-full px-4">
-              <Button
-                className="w-full"
-                title="Confirmar"
-                onPress={handleSubmit}
-              />
+            <View className="w-3/4 px-4">
+              <Button title="Confirmar" onPress={handleSubmit} />
             </View>
           </View>
         </TouchableWithoutFeedback>
